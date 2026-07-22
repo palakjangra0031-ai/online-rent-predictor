@@ -3,7 +3,7 @@ import gradio as gr
 import joblib
 
 # We load the model once when the app starts
-deployed_lr = joblib.load('myFirstModel.pkl')
+deployed_lr = joblib.load('rent_prediction_model.pkl')
 
 def predict_rent(size_of_prop):
     # The model expects a 2D array: [[size]], it will give the rent of the property
